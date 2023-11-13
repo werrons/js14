@@ -5,22 +5,38 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
 
-<h2 id="res"></h2>
-
-<div>
-    <input type="button" value="bumaga">
-    <img src="rock-paper-scissors-rock-paper-scissors-clipart-1176494.png">
-    <input type="button" value="nojnici">
-    <img src="javascript-246531.png" alt="">
-    <input type="button" value="kamen">
-    <img src="rock-paper-scissors-game-246511.png" alt="">
+<div class="container">
+    <div class="game-container">
+        <div class="container-wrap">
+            <img src="./javascript-246531.png" alt="">
+            <input type="button" id="nojnici" value="Ножница">
+        </div>
+        <div class="container-wrap">
+            <img src="./rock-paper-scissors-rock-paper-scissors-clipart-1176494.png" alt="">
+            <input type="button" id="kamen" value="Камень">
+        </div>
+        <div class="container-wrap">
+            <img src="./pngtree-left-hand-gesture-cartoon-illustration-image_1436869.jpg" alt="">
+            <input type="button" id="bymaga" value="Бумага">
+        </div>
+    </div>
+    <div class="text-game">
+        <div class="img-container">
+            <p>Выбор игрока: <span id="userGame"></span></p>
+            <img src="" alt="" id="userImg">
+        </div>
+        <div class="img-container">
+            <p>Выбор Компьютера: <span id="computerGame"></span></p>
+            <img src="" alt="" id="computerImg">
+        </div>
+        <p>Результат:<span id="gameRes"></span></p>
+    </div>
 </div>
-
-<script src="csript.js"></script>
+<script src="./csript.js"></script>
 </body>
 </html>
